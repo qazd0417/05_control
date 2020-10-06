@@ -4,14 +4,16 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	int a;
-	printf("정수하나를 입력하시오.:");
-	scanf("%d",&a);
+	int a=0;
+	char c;
 	
-	if(a<0)
-		printf("%d의 절대값은 %d 입니다.",a,a*-1);
-	else
-		printf("%d의 절대값은 %d 입니다.",a,a);	
-		 
+	printf("문자를 입력해 주세요.:");
+	while((c=getchar()) !='\n')
+	{
+		if(c>=48 && c<=57)
+			a = a+1; 
+	 } 
+	
+	printf("숫자는 %d개 입니다.\n",a);	 
 	return 0;
 }
