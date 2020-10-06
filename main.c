@@ -4,16 +4,14 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	int a=0;
-	char c;
+	int sum=0;
+	int a, i;
+
+	printf("input a number:");
+	scanf("%d",&a);
 	
-	printf("문자를 입력해 주세요.:");
-	while((c=getchar()) !='\n')
-	{
-		if(c>=48 && c<=57)
-			a = a+1; 
-	 } 
-	
-	printf("숫자는 %d개 입니다.\n",a);	 
+	for (i=0; i<=a; i++)
+		sum += i;
+	printf("the sum result is %d\n",sum);
 	return 0;
 }
