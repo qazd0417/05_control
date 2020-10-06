@@ -8,12 +8,10 @@ int main(int argc, char *argv[]) {
 	printf("정수하나를 입력하시오.:");
 	scanf("%d",&a);
 	
-	if(a>0)
-		printf("양수입니다.\n");
-	else if (a<0) 
-		printf("음수입니다.\n");
+	if(a<0)
+		printf("%d의 절대값은 %d 입니다.",a,a*-1);
 	else
-		printf("0 입니다.\n"); 
+		printf("%d의 절대값은 %d 입니다.",a,a);	
 		 
 	return 0;
 }
